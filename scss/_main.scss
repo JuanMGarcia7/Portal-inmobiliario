@@ -1,0 +1,434 @@
+
+
+.bgColor {
+	background-color: $cFondo;
+}
+header {
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	border-bottom: 3px solid black;
+	background-color: $cFondo;
+
+
+	#portalInmobiliario  {
+	display: flex;
+	padding-left: 1%;
+	width: 70%;
+
+
+		.navbar-brand {
+		font-size: 30px;
+		color: $cPrimario;
+		font-family: $fuente;
+		}
+
+			.logo {
+				width: 65px;
+				height: 60px;
+			}
+	}
+
+	a {
+	text-decoration: none;
+	color: black;
+	font-family: $fuente;
+	font-weight:$fuente-bold;
+	}
+
+	.nosotrosGeneral {
+		display: flex;
+		margin-right: 5rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		width: 30% ;
+
+			.navbar{ 
+				@media all and (max-width: 992px){
+						display: flex;
+						justify-content: flex-end;
+					
+				}
+
+			}
+			.navbar-nav {
+				.nav-link{
+					margin-right: 10%;
+					color: $cPrimario;
+					transition: all 500ms ease-in-out;
+					&:hover{
+					transform: scale(1.3);
+					color:black;
+					}
+				}
+			}
+
+
+			
+	}
+
+}
+
+.bloqueBuscador {
+	padding-top: 10%;
+}
+
+.cuerpoPrincipal {
+	background-image: url("../media/imagenFondo.JPG");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 90%;
+	margin: auto;
+	padding-top:6%;
+
+
+
+		.cuerpoPrincipal__buscador{
+			font-size: $fuente-l;
+			font-family: $fuente;
+			margin-left: 20%;
+			line-height: 1;
+			padding-top: 0.5%;
+			font-weight: 500;
+				
+				@media all and (max-width: 992px){
+					margin-left: 10%;
+				}
+
+				@media all and (max-width: 576px){
+					margin: 0;
+					padding-left: 4%;
+					padding-top:3%;
+				}
+
+		}
+
+		.buttonSearch {
+			font-size: $fuente-l;
+			background-color: #D1D4D6;
+			margin-left: 20%;
+			margin-top: 1%;
+			border-radius: 50px;
+			background-color:$bcButtons;
+
+				@media all and (max-width: 992px){
+					margin-left: 10%;
+				}
+
+				@media all and (max-width: 576px){
+					margin-left: 2%;
+				}
+
+			
+		}
+
+		.buttonSearch:hover {
+			transform: scale(1.1);
+		}
+
+}
+
+.destacados{
+	
+	
+
+	.destacados__titulos {
+		font-size: 30px;
+		display: flex;
+		justify-content: center;
+		padding-top: 2%;	
+		color: $cPrimario;
+		font-family: $fuente;
+		border-top: 1px solid black;
+		width: 40%;
+		margin: auto;
+		text-align: center;
+		padding-bottom: 1%;
+
+
+			@media all and (max-width: 992px){
+				border-top: 1px solid black;
+				width: 80%;
+				margin: auto;
+				padding-top: 2%;
+				text-align: center;
+				padding-bottom: 1%;
+			}
+
+			/* VER, ESTA DE MAS?*/
+			@media all and (max-width: 576px){
+				border-top: 1px solid black;
+				width: 80%;
+				margin: auto;
+				padding-top: 2%;
+				text-align: center;
+				padding-bottom: 1%;
+
+			}
+
+	}
+
+		#primerDestacado {
+			margin-top: 4%;
+		}
+
+	.destacados__img {
+		margin: auto;
+		display:block;	
+		width: 25%;
+		padding: 0.5%;
+		border: 1px solid black;
+		transition: all 500ms ease-in-out;
+		margin-bottom: 1.5%;
+			
+			&:hover {
+				transform: scale(1.1);
+			}
+
+
+			@media all and (max-width: 992px){
+				width: 70%;
+				padding-top: 0.5%;
+				margin-top: 1%;
+				margin-bottom: 5%;
+			}
+
+			@media all and (max-width: 576px){
+				width: 70%;
+				padding-top: 0.5%;
+				margin-bottom: 5%;
+			}
+
+			
+		}
+	
+
+
+
+	.destacados__texto{
+		font-family:$fuente;
+		color: black;
+		font-size: $fuente-m;
+		text-align: center;
+		width: 25%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		margin: auto;
+
+			@media all and (max-width: 992px){
+				width: 80%;
+				padding:2% 0%;
+			}
+
+			@media all and (max-width: 576px){
+				width: 80%;
+			}
+	}
+
+	#imagen2 {
+		margin-top: 1%;
+	}
+
+}
+
+.contactForm {
+	width: 60%;
+	margin: auto;
+	padding: 1%;
+	border: 1px solid black;
+	box-shadow: -4px 4px 6px 0px rgba(0,0,0,0.75);
+	background-image:url(../media/fondo.JPEG);
+
+
+
+		@media all and (max-width: 992px){
+			width: 80%;
+		}
+
+		@media all and (max-width: 576px){
+			width: 80%;
+		}
+
+		.contactForm__datos {
+			font-family: $fuente;
+			font-size: $fuente-m;
+
+		}
+
+		textarea {
+			width: 100%;
+		}
+
+		.buttons{
+
+			.form__button {
+				height: 40px;
+				width: 90px; 
+				background-color:$bcButtons;
+				font-family: $fuente;
+				font-size: $fuente-m; 
+				font-weight:$fuente-bold;
+				cursor: pointer;
+				border-radius: 10px;
+				color: black;
+				margin-top: .75rem;
+				margin-right: 1rem;
+				-webkit-transition: all 400ms ease-out;
+				-moz-transition: all 400ms ease-out;
+				-ms-transition: all 400ms ease-out;
+				-o-transition: all 400ms ease-out;
+				transition: all 400ms ease-out;
+			}
+
+			#Enviar:hover {
+				transform: scale(1.1);
+			}
+
+			#Borrar:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+.logoWhatsApp {
+	position: fixed;
+	right: 5%;
+	bottom: 7%;
+
+	@media all and (max-width: 992px){
+		position: fixed;
+		right: 3%;
+
+	}
+
+	@media all and (max-width: 576px) {
+		position: fixed;
+		right: 1.5%;
+
+	}
+
+	img {
+		width: 50px;
+		height: 50px;
+		transition: 500ms ease-in-out;
+	}
+
+	img:hover {
+		transform: scale(1.1);
+	}
+}
+
+footer {
+	border-top: 1px solid black;
+	text-align: center;
+	width: 100%;
+	height: 1%;
+	margin-top: 1%;
+	margin-bottom: 0;
+	padding-top: 0.5%;
+	
+
+	p{
+		color: grey;
+		font-family: $fuente;
+		font-weight: $fuente-bold;
+	}
+}
+/* HASTA ACA EN INDEX.HTML*/
+
+.slide {
+	padding-top: 10%;
+	margin-bottom: 5%;
+		@media all and (max-width: 992px){		
+				padding-top:15%;
+		}
+
+	.slideContent{
+		background-color: rgba( 255,255,255, .5);  
+		border-radius: 10px;
+		width: 40%;
+		margin: auto;
+		padding-bottom:.5%;
+		font-family:$fuente;	
+	}
+
+			#carousel-control-prev {
+				left: 0;
+			    height: 250px;
+			    margin-top: 350px;
+			
+				@media all and (max-width: 992px){
+					margin-top:150px;
+				}
+			}
+			
+			#carousel-control-next {
+			    right: 0;
+			    height: 250px;
+			    margin-top: 350px;
+
+			    @media all and (max-width: 992px){
+					margin-top:150px;
+				}
+			}
+}
+
+.cuerpoNosotros {
+	display: grid;
+	grid-template-areas: 
+	"quienesSomos quienesSomos quienesSomos"
+	"elegirnos elegirnos elegirnos"
+	"motivacion motivacion motivacion";
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 15px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	margin-top: 2%;
+	
+
+		@media all and (max-width: 1200px){
+			width: 80%;
+		}
+
+		#quienesSomos {
+			grid-area: quienesSomos;
+		}
+
+		#elegirnos {
+			grid-area: elegirnos;
+		}
+
+		#motivacion {
+			grid-area: motivacion;
+		}
+
+		.cuerpoNosotros__titulos {
+			font-family:  $fuente;
+			font-size: 30px;
+			width: 30%;
+			margin: auto;
+			text-align: center;
+			padding-bottom: 1%;
+			border-bottom: 1px solid black;
+			color: grey;
+			margin-bottom: 2%;
+			font-weight: $fuente-bold;
+
+			@media all and (max-width: 992px){
+				width: 70%;
+			}
+		}
+
+		.descripcionesNosotros {
+			font-family:  $fuente;
+			font-size: 27px;
+			padding-top: 2%;
+			margin-bottom: 2%;
+			font-weight: $fuente-regular;
+		}
+	}
+	
+
