@@ -17,10 +17,15 @@ header {
 	width: 70%;
 
 
+
 		.navbar-brand {
 		font-size: 30px;
 		color: $cPrimario;
 		font-family: $fuente;
+
+		@media all and (max-width: 576px){
+			font-size: $fuente-l;
+		}
 		}
 
 			.logo {
@@ -74,13 +79,18 @@ header {
 }
 
 .cuerpoPrincipal {
-	background-image: url("../media/imagenFondo.JPG");
+	background-image: url("../media/imagenFondo.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 600px;
 	width: 90%;
 	margin: auto;
 	padding-top:6%;
+
+	@media all and (max-width: 576px){
+		width: 100%;
+		padding-top:10%;
+	}
 
 
 
@@ -247,7 +257,8 @@ header {
 		}
 
 		@media all and (max-width: 576px){
-			width: 80%;
+			width: 100%;
+			margin-bottom: 4%;
 		}
 
 		.contactForm__datos {
@@ -258,6 +269,8 @@ header {
 
 		textarea {
 			width: 100%;
+			resize: none;
+
 		}
 
 		.buttons{
@@ -327,13 +340,75 @@ footer {
 	margin-top: 1%;
 	margin-bottom: 0;
 	padding-top: 0.5%;
-	
 
-	p{
-		color: grey;
-		font-family: $fuente;
-		font-weight: $fuente-bold;
-	}
+
+		
+		.container-footer{
+			display: flex;
+			width: 100%;
+			align-items:center;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			padding-bottom:1%;
+			border-bottom: 1px solid #010101;
+
+		}
+
+		.mapaUbicacion {
+			width: 50%;
+			justify-content: flex-start;
+			margin-top: 2%;
+
+			@media all and (max-width: 576px){
+				width: 100%
+			}
+
+		}
+		.datosEmpresa {
+			width: 50%;
+			border-left: 1px solid #010101;
+
+			@media all and (max-width: 576px){
+				width: 100%;
+				padding-top:1%;
+				border-left:none;
+			}
+
+			.datosFooter {
+				display: flex;
+				justify-content:flex-start;
+				width: 100%;
+				margin-top: 4%;
+				padding-left:5%;
+
+				@media all and (max-width: 576px){
+					width: 80%;
+					text-align: left;
+				}
+
+
+					.datosFooter_contenidos{
+						padding-left:2%;
+						font-family: $fuente;
+						font-weight: $fuente-regular;
+						font-size: $fuente-m;
+					}
+				
+					.img_footer{
+						width: 30px;
+						height: 30px;
+					}
+
+			}
+		}
+
+		p{
+			color: $cFondo;
+			font-family: $fuente;
+			font-weight: $fuente-bold;
+			background-color: $cPrimario;
+			margin-bottom: 0px !important; 
+		}
 }
 /* HASTA ACA EN INDEX.HTML*/
 

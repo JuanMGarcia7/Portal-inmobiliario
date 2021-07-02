@@ -1,5 +1,5 @@
 {
-  "name": "desafioentregableclase11",
+  "name": "proyectoportalinmobiliario",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -14,5 +14,13 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanMGarcia7/Portal-inmobiliario.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JuanMGarcia7/Portal-inmobiliario/issues"
+  },
+  "homepage": "https://github.com/JuanMGarcia7/Portal-inmobiliario#readme",
   "description": ""
 }

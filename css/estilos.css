@@ -16,6 +16,9 @@ header {
       font-size: 30px;
       color: #4F4F4F;
       font-family: "Raleway", sans-serif; }
+      @media all and (max-width: 576px) {
+        header #portalInmobiliario .navbar-brand {
+          font-size: 20px; } }
     header #portalInmobiliario .logo {
       width: 65px;
       height: 60px; }
@@ -46,13 +49,17 @@ header {
   padding-top: 10%; }
 
 .cuerpoPrincipal {
-  background-image: url("../media/imagenFondo.JPG");
+  background-image: url("../media/imagenFondo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
   width: 90%;
   margin: auto;
   padding-top: 6%; }
+  @media all and (max-width: 576px) {
+    .cuerpoPrincipal {
+      width: 100%;
+      padding-top: 10%; } }
   .cuerpoPrincipal .cuerpoPrincipal__buscador {
     font-size: 20px;
     font-family: "Raleway", sans-serif;
@@ -171,12 +178,14 @@ header {
       width: 80%; } }
   @media all and (max-width: 576px) {
     .contactForm {
-      width: 80%; } }
+      width: 100%;
+      margin-bottom: 4%; } }
   .contactForm .contactForm__datos {
     font-family: "Raleway", sans-serif;
     font-size: 18px; }
   .contactForm textarea {
-    width: 100%; }
+    width: 100%;
+    resize: none; }
   .contactForm .buttons .form__button {
     height: 40px;
     width: 90px;
@@ -226,10 +235,53 @@ footer {
   margin-top: 1%;
   margin-bottom: 0;
   padding-top: 0.5%; }
+  footer .container-footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #010101; }
+  footer .mapaUbicacion {
+    width: 50%;
+    justify-content: flex-start;
+    margin-top: 2%; }
+    @media all and (max-width: 576px) {
+      footer .mapaUbicacion {
+        width: 100%; } }
+  footer .datosEmpresa {
+    width: 50%;
+    border-left: 1px solid #010101; }
+    @media all and (max-width: 576px) {
+      footer .datosEmpresa {
+        width: 100%;
+        padding-top: 1%;
+        border-left: none; } }
+    footer .datosEmpresa .datosFooter {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 4%;
+      padding-left: 5%; }
+      @media all and (max-width: 576px) {
+        footer .datosEmpresa .datosFooter {
+          width: 80%;
+          text-align: left; } }
+      footer .datosEmpresa .datosFooter .datosFooter_contenidos {
+        padding-left: 2%;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 18px; }
+      footer .datosEmpresa .datosFooter .img_footer {
+        width: 30px;
+        height: 30px; }
   footer p {
-    color: grey;
+    color: #E7E7E2;
     font-family: "Raleway", sans-serif;
-    font-weight: 500; }
+    font-weight: 500;
+    background-color: #4F4F4F;
+    margin-bottom: 0px !important; }
 
 /* HASTA ACA EN INDEX.HTML*/
 .slide {
