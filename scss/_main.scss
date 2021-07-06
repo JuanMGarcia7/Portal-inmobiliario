@@ -14,7 +14,7 @@ header {
 	#portalInmobiliario  {
 	display: flex;
 	padding-left: 1%;
-	width: 70%;
+	width: 60%;
 
 
 
@@ -41,12 +41,17 @@ header {
 	font-weight:$fuente-bold;
 	}
 
+	.active{
+		border-bottom: 1px solid #010101;
+		border-radius: 0px 0px 5px 5px;
+	}
+
 	.nosotrosGeneral {
 		display: flex;
 		margin-right: 5rem;
 		margin-top: 1rem;
 		margin-bottom: 1rem;
-		width: 30% ;
+		width: 40% ;
 
 			.navbar{ 
 				@media all and (max-width: 992px){
@@ -60,82 +65,52 @@ header {
 				.nav-link{
 					margin-right: 10%;
 					color: $cPrimario;
-					transition: all 500ms ease-in-out;
+					transition: all 300ms ease-in-out;
 					&:hover{
 					transform: scale(1.3);
-					color:black;
+					color: #010101;
 					}
 				}
 			}
 
+			#dropdownMenuLink{
+				font-weight: $fuente-bold;
+				padding-right: 2.5rem;
+				display: flex;
+				justify-content: flex-start;
+				width: 70%;
 
+			}
+
+			.dropdown-item:focus{
+				background-color:transparent;
+				color: #010101;
+			}
+				.btn:focus{
+					box-shadow:none !important;
+				}
 			
 	}
 
 }
 
-.bloqueBuscador {
-	padding-top: 10%;
-}
 
-.cuerpoPrincipal {
+
+.fondo-portada{
 	background-image: url("../media/imagenFondo.jpg");
+	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 600px;
-	width: 90%;
-	margin: auto;
-	padding-top:6%;
 
-	@media all and (max-width: 576px){
-		width: 100%;
-		padding-top:10%;
-	}
-
-
-
-		.cuerpoPrincipal__buscador{
-			font-size: $fuente-l;
-			font-family: $fuente;
-			margin-left: 20%;
-			line-height: 1;
-			padding-top: 0.5%;
-			font-weight: 500;
-				
-				@media all and (max-width: 992px){
-					margin-left: 10%;
-				}
-
-				@media all and (max-width: 576px){
-					margin: 0;
-					padding-left: 4%;
-					padding-top:3%;
-				}
-
-		}
-
-		.buttonSearch {
-			font-size: $fuente-l;
-			background-color: #D1D4D6;
-			margin-left: 20%;
-			margin-top: 1%;
-			border-radius: 50px;
-			background-color:$bcButtons;
-
-				@media all and (max-width: 992px){
-					margin-left: 10%;
-				}
-
-				@media all and (max-width: 576px){
-					margin-left: 2%;
-				}
-
-			
-		}
-
-		.buttonSearch:hover {
-			transform: scale(1.1);
-		}
+}
+.frase-portada{
+	font-size: 30px;
+	font-family: $fuentePort;
+	display: flex;
+	justify-content: center;
+	padding-top: 25%;
+	background-color: rgba( 255,255,255, .3);
+	height: 100vh;
 
 }
 
@@ -166,7 +141,6 @@ header {
 				padding-bottom: 1%;
 			}
 
-			/* VER, ESTA DE MAS?*/
 			@media all and (max-width: 576px){
 				border-top: 1px solid black;
 				width: 80%;
@@ -270,28 +244,43 @@ header {
 		textarea {
 			width: 100%;
 			resize: none;
+			outline: none;
 
+			&:focus{
+				box-shadow:none;
+				border:1px solid $cPrimario;
+			}
+
+		}
+		
+		.form-control:focus{
+
+		box-shadow:none;
+		border:1px solid $cPrimario;
 		}
 
 		.buttons{
-
+			display: flex;
+			justify-content: center;
 			.form__button {
-				height: 40px;
-				width: 90px; 
-				background-color:$bcButtons;
+				width: 12%;
+				font-weight: $fuente-regular;
+				text-align: center;
+				background-color: $cPrimario;
+				padding: .375rem .75rem;
+				margin-left: 2%;				
+				color: $cFondo;
+				border: none;
 				font-family: $fuente;
-				font-size: $fuente-m; 
-				font-weight:$fuente-bold;
-				cursor: pointer;
-				border-radius: 10px;
-				color: black;
-				margin-top: .75rem;
-				margin-right: 1rem;
-				-webkit-transition: all 400ms ease-out;
-				-moz-transition: all 400ms ease-out;
-				-ms-transition: all 400ms ease-out;
-				-o-transition: all 400ms ease-out;
-				transition: all 400ms ease-out;
+				-webkit-transition: all 300ms ease-out;
+				-moz-transition: all 300ms ease-out;
+				-ms-transition: all 300ms ease-out;
+				-o-transition: all 300ms ease-out;
+				transition: all 300ms ease-out;
+
+				@media all and (max-width: 768px){
+					width: 15%;
+				}
 			}
 
 			#Enviar:hover {
@@ -332,7 +321,7 @@ header {
 	}
 }
 
-footer {
+.footer {
 	border-top: 1px solid black;
 	text-align: center;
 	width: 100%;
@@ -340,6 +329,7 @@ footer {
 	margin-top: 1%;
 	margin-bottom: 0;
 	padding-top: 0.5%;
+	overflow: hidden;
 
 
 		
@@ -368,7 +358,7 @@ footer {
 			width: 50%;
 			border-left: 1px solid #010101;
 
-			@media all and (max-width: 576px){
+			@media all and (max-width: 992px){
 				width: 100%;
 				padding-top:1%;
 				border-left:none;
@@ -505,5 +495,117 @@ footer {
 			font-weight: $fuente-regular;
 		}
 	}
-	
 
+/*ventas html*/
+	
+.secVentas{
+			overflow: hidden;
+
+	.titulos_venta{
+			font-size: 30px;
+			display: flex;
+			justify-content: center;
+			padding-top: 10%;	
+			color: $cPrimario;
+			font-family: $fuente;
+			border-bottom: 1px solid #010101;
+			width: 40%;
+			margin: auto;
+			text-align: center;
+			padding-bottom: 1%;
+
+			@media all and (max-width: 992px){
+				padding-top: 20%;
+				width: 85%;
+			}
+	}
+
+
+	.card{
+		height: 600px;
+		margin: auto;
+		margin-top: 3%;
+		background-color: $cFondo;
+		border:1px solid #010101;
+		box-shadow: -4px 1px 12px 1px rgba(0,0,0,0.6);
+		-webkit-box-shadow: -4px 1px 12px 1px rgba(0,0,0,0.6);
+		-moz-box-shadow: -4px 1px 12px 1px rgba(0,0,0,0.6);
+
+
+		@media all and (max-width: 992px) {
+			min-width: 80%;
+			margin: auto;
+			margin-top: 2%;
+			margin-bottom: 2%;
+			min-height: 100%;
+
+		}
+
+		img{
+			width: 75%;
+
+			margin:auto;
+			padding-top:4%;
+		}
+
+		.card-body{
+			width: 80%;
+			margin: auto;
+		}
+			.btn-container{
+				display: flex;
+				width: 100%;
+				justify-content: center;
+			}
+			.btn-cards{
+				display: inline-block;
+				font-weight: $fuente-regular;
+				text-align: center;
+				background-color: $cPrimario;
+				padding: .375rem .75rem;
+				border-radius: .25rem;
+				color: $cFondo;
+				border: none;
+				font-family: $fuente;
+				-webkit-transition: all 300ms ease-out;
+				-moz-transition: all 300ms ease-out;
+				-ms-transition: all 300ms ease-out;
+				-o-transition: all 300ms ease-out;
+				transition: all 300ms ease-out;
+
+					&:hover{
+						background-color:$cFondo;
+						color: $cPrimario;
+						border:1px solid $cPrimario;
+
+					}					
+			}
+			textarea{
+				display: flex;
+				width:97%;
+				margin:auto; 
+			}
+
+		}
+	
+	.modal-footer{
+		justify-content: center !important;
+			.btn-secondary{
+				background-color:$cPrimario;
+				font-family: $fuente;
+				font-size: $fuente-m;
+				color: $cFondo;
+				-webkit-transition: all 300ms ease-out;
+				-moz-transition: all 300ms ease-out;
+				-ms-transition: all 300ms ease-out;
+				-o-transition: all 300ms ease-out;
+				transition: all 300ms ease-out;
+
+				&:hover{
+					background-color:$cFondo;
+					color: $cPrimario;
+
+				}
+			}
+	}
+}

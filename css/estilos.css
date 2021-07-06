@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 .bgColor {
   background-color: #E7E7E2; }
 
@@ -11,7 +12,7 @@ header {
   header #portalInmobiliario {
     display: flex;
     padding-left: 1%;
-    width: 70%; }
+    width: 60%; }
     header #portalInmobiliario .navbar-brand {
       font-size: 30px;
       color: #4F4F4F;
@@ -27,12 +28,15 @@ header {
     color: black;
     font-family: "Raleway", sans-serif;
     font-weight: 500; }
+  header .active {
+    border-bottom: 1px solid #010101;
+    border-radius: 0px 0px 5px 5px; }
   header .nosotrosGeneral {
     display: flex;
     margin-right: 5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 30%; }
+    width: 40%; }
     @media all and (max-width: 992px) {
       header .nosotrosGeneral .navbar {
         display: flex;
@@ -40,56 +44,36 @@ header {
     header .nosotrosGeneral .navbar-nav .nav-link {
       margin-right: 10%;
       color: #4F4F4F;
-      transition: all 500ms ease-in-out; }
+      transition: all 300ms ease-in-out; }
       header .nosotrosGeneral .navbar-nav .nav-link:hover {
         transform: scale(1.3);
-        color: black; }
+        color: #010101; }
+    header .nosotrosGeneral #dropdownMenuLink {
+      font-weight: 500;
+      padding-right: 2.5rem;
+      display: flex;
+      justify-content: flex-start;
+      width: 70%; }
+    header .nosotrosGeneral .dropdown-item:focus {
+      background-color: transparent;
+      color: #010101; }
+    header .nosotrosGeneral .btn:focus {
+      box-shadow: none !important; }
 
-.bloqueBuscador {
-  padding-top: 10%; }
-
-.cuerpoPrincipal {
+.fondo-portada {
   background-image: url("../media/imagenFondo.jpg");
+  height: 100vh;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 90%;
-  margin: auto;
-  padding-top: 6%; }
-  @media all and (max-width: 576px) {
-    .cuerpoPrincipal {
-      width: 100%;
-      padding-top: 10%; } }
-  .cuerpoPrincipal .cuerpoPrincipal__buscador {
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-    margin-left: 20%;
-    line-height: 1;
-    padding-top: 0.5%;
-    font-weight: 500; }
-    @media all and (max-width: 992px) {
-      .cuerpoPrincipal .cuerpoPrincipal__buscador {
-        margin-left: 10%; } }
-    @media all and (max-width: 576px) {
-      .cuerpoPrincipal .cuerpoPrincipal__buscador {
-        margin: 0;
-        padding-left: 4%;
-        padding-top: 3%; } }
-  .cuerpoPrincipal .buttonSearch {
-    font-size: 20px;
-    background-color: #D1D4D6;
-    margin-left: 20%;
-    margin-top: 1%;
-    border-radius: 50px;
-    background-color: #D1D1C9; }
-    @media all and (max-width: 992px) {
-      .cuerpoPrincipal .buttonSearch {
-        margin-left: 10%; } }
-    @media all and (max-width: 576px) {
-      .cuerpoPrincipal .buttonSearch {
-        margin-left: 2%; } }
-  .cuerpoPrincipal .buttonSearch:hover {
-    transform: scale(1.1); }
+  background-repeat: no-repeat; }
+
+.frase-portada {
+  font-size: 30px;
+  font-family: "Caveat", cursive;
+  display: flex;
+  justify-content: center;
+  padding-top: 25%;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100vh; }
 
 .destacados .destacados__titulos {
   font-size: 30px;
@@ -102,8 +86,7 @@ header {
   width: 40%;
   margin: auto;
   text-align: center;
-  padding-bottom: 1%;
-  /* VER, ESTA DE MAS?*/ }
+  padding-bottom: 1%; }
   @media all and (max-width: 992px) {
     .destacados .destacados__titulos {
       border-top: 1px solid black;
@@ -185,28 +168,39 @@ header {
     font-size: 18px; }
   .contactForm textarea {
     width: 100%;
-    resize: none; }
-  .contactForm .buttons .form__button {
-    height: 40px;
-    width: 90px;
-    background-color: #D1D1C9;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 10px;
-    color: black;
-    margin-top: .75rem;
-    margin-right: 1rem;
-    -webkit-transition: all 400ms ease-out;
-    -moz-transition: all 400ms ease-out;
-    -ms-transition: all 400ms ease-out;
-    -o-transition: all 400ms ease-out;
-    transition: all 400ms ease-out; }
-  .contactForm .buttons #Enviar:hover {
-    transform: scale(1.1); }
-  .contactForm .buttons #Borrar:hover {
-    transform: scale(1.1); }
+    resize: none;
+    outline: none; }
+    .contactForm textarea:focus {
+      box-shadow: none;
+      border: 1px solid #4F4F4F; }
+  .contactForm .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #4F4F4F; }
+  .contactForm .buttons {
+    display: flex;
+    justify-content: center; }
+    .contactForm .buttons .form__button {
+      width: 12%;
+      font-weight: 400;
+      text-align: center;
+      background-color: #4F4F4F;
+      padding: .375rem .75rem;
+      margin-left: 2%;
+      color: #E7E7E2;
+      border: none;
+      font-family: "Raleway", sans-serif;
+      -webkit-transition: all 300ms ease-out;
+      -moz-transition: all 300ms ease-out;
+      -ms-transition: all 300ms ease-out;
+      -o-transition: all 300ms ease-out;
+      transition: all 300ms ease-out; }
+      @media all and (max-width: 768px) {
+        .contactForm .buttons .form__button {
+          width: 15%; } }
+    .contactForm .buttons #Enviar:hover {
+      transform: scale(1.1); }
+    .contactForm .buttons #Borrar:hover {
+      transform: scale(1.1); }
 
 .logoWhatsApp {
   position: fixed;
@@ -227,15 +221,16 @@ header {
   .logoWhatsApp img:hover {
     transform: scale(1.1); }
 
-footer {
+.footer {
   border-top: 1px solid black;
   text-align: center;
   width: 100%;
   height: 1%;
   margin-top: 1%;
   margin-bottom: 0;
-  padding-top: 0.5%; }
-  footer .container-footer {
+  padding-top: 0.5%;
+  overflow: hidden; }
+  .footer .container-footer {
     display: flex;
     width: 100%;
     align-items: center;
@@ -243,40 +238,40 @@ footer {
     flex-wrap: wrap;
     padding-bottom: 1%;
     border-bottom: 1px solid #010101; }
-  footer .mapaUbicacion {
+  .footer .mapaUbicacion {
     width: 50%;
     justify-content: flex-start;
     margin-top: 2%; }
     @media all and (max-width: 576px) {
-      footer .mapaUbicacion {
+      .footer .mapaUbicacion {
         width: 100%; } }
-  footer .datosEmpresa {
+  .footer .datosEmpresa {
     width: 50%;
     border-left: 1px solid #010101; }
-    @media all and (max-width: 576px) {
-      footer .datosEmpresa {
+    @media all and (max-width: 992px) {
+      .footer .datosEmpresa {
         width: 100%;
         padding-top: 1%;
         border-left: none; } }
-    footer .datosEmpresa .datosFooter {
+    .footer .datosEmpresa .datosFooter {
       display: flex;
       justify-content: flex-start;
       width: 100%;
       margin-top: 4%;
       padding-left: 5%; }
       @media all and (max-width: 576px) {
-        footer .datosEmpresa .datosFooter {
+        .footer .datosEmpresa .datosFooter {
           width: 80%;
           text-align: left; } }
-      footer .datosEmpresa .datosFooter .datosFooter_contenidos {
+      .footer .datosEmpresa .datosFooter .datosFooter_contenidos {
         padding-left: 2%;
         font-family: "Raleway", sans-serif;
         font-weight: 400;
         font-size: 18px; }
-      footer .datosEmpresa .datosFooter .img_footer {
+      .footer .datosEmpresa .datosFooter .img_footer {
         width: 30px;
         height: 30px; }
-  footer p {
+  .footer p {
     color: #E7E7E2;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
@@ -351,3 +346,88 @@ footer {
     padding-top: 2%;
     margin-bottom: 2%;
     font-weight: 400; }
+
+/*ventas html*/
+.secVentas {
+  overflow: hidden; }
+  .secVentas .titulos_venta {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    color: #4F4F4F;
+    font-family: "Raleway", sans-serif;
+    border-bottom: 1px solid #010101;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1%; }
+    @media all and (max-width: 992px) {
+      .secVentas .titulos_venta {
+        padding-top: 20%;
+        width: 85%; } }
+  .secVentas .card {
+    height: 600px;
+    margin: auto;
+    margin-top: 3%;
+    background-color: #E7E7E2;
+    border: 1px solid #010101;
+    box-shadow: -4px 1px 12px 1px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: -4px 1px 12px 1px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: -4px 1px 12px 1px rgba(0, 0, 0, 0.6); }
+    @media all and (max-width: 992px) {
+      .secVentas .card {
+        min-width: 80%;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        min-height: 100%; } }
+    .secVentas .card img {
+      width: 75%;
+      margin: auto;
+      padding-top: 4%; }
+    .secVentas .card .card-body {
+      width: 80%;
+      margin: auto; }
+    .secVentas .card .btn-container {
+      display: flex;
+      width: 100%;
+      justify-content: center; }
+    .secVentas .card .btn-cards {
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      background-color: #4F4F4F;
+      padding: .375rem .75rem;
+      border-radius: .25rem;
+      color: #E7E7E2;
+      border: none;
+      font-family: "Raleway", sans-serif;
+      -webkit-transition: all 300ms ease-out;
+      -moz-transition: all 300ms ease-out;
+      -ms-transition: all 300ms ease-out;
+      -o-transition: all 300ms ease-out;
+      transition: all 300ms ease-out; }
+      .secVentas .card .btn-cards:hover {
+        background-color: #E7E7E2;
+        color: #4F4F4F;
+        border: 1px solid #4F4F4F; }
+    .secVentas .card textarea {
+      display: flex;
+      width: 97%;
+      margin: auto; }
+  .secVentas .modal-footer {
+    justify-content: center !important; }
+    .secVentas .modal-footer .btn-secondary {
+      background-color: #4F4F4F;
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      color: #E7E7E2;
+      -webkit-transition: all 300ms ease-out;
+      -moz-transition: all 300ms ease-out;
+      -ms-transition: all 300ms ease-out;
+      -o-transition: all 300ms ease-out;
+      transition: all 300ms ease-out; }
+      .secVentas .modal-footer .btn-secondary:hover {
+        background-color: #E7E7E2;
+        color: #4F4F4F; }
