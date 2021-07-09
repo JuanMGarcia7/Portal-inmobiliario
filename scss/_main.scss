@@ -117,7 +117,6 @@ header {
 .destacados{
 	
 	
-
 	.destacados__titulos {
 		font-size: 30px;
 		display: flex;
@@ -126,7 +125,7 @@ header {
 		color: $cPrimario;
 		font-family: $fuente;
 		border-top: 1px solid black;
-		width: 40%;
+		width: 50%;
 		margin: auto;
 		text-align: center;
 		padding-bottom: 1%;
@@ -160,7 +159,7 @@ header {
 	.destacados__img {
 		margin: auto;
 		display:block;	
-		width: 25%;
+		width: 35%;
 		padding: 0.5%;
 		border: 1px solid black;
 		transition: all 500ms ease-in-out;
@@ -376,6 +375,14 @@ header {
 					text-align: left;
 				}
 
+				a{
+					text-decoration: none;
+					color: #010101;
+
+					&:hover{
+						color: #010101;
+					}
+				}
 
 					.datosFooter_contenidos{
 						padding-left:2%;
@@ -385,14 +392,14 @@ header {
 					}
 				
 					.img_footer{
-						width: 30px;
-						height: 30px;
+						width: 40px;
+						
 					}
 
 			}
 		}
 
-		p{
+		.slogan__footer{
 			color: $cFondo;
 			font-family: $fuente;
 			font-weight: $fuente-bold;

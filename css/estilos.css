@@ -83,7 +83,7 @@ header {
   color: #4F4F4F;
   font-family: "Raleway", sans-serif;
   border-top: 1px solid black;
-  width: 40%;
+  width: 50%;
   margin: auto;
   text-align: center;
   padding-bottom: 1%; }
@@ -110,7 +110,7 @@ header {
 .destacados .destacados__img {
   margin: auto;
   display: block;
-  width: 25%;
+  width: 35%;
   padding: 0.5%;
   border: 1px solid black;
   transition: all 500ms ease-in-out;
@@ -263,15 +263,19 @@ header {
         .footer .datosEmpresa .datosFooter {
           width: 80%;
           text-align: left; } }
+      .footer .datosEmpresa .datosFooter a {
+        text-decoration: none;
+        color: #010101; }
+        .footer .datosEmpresa .datosFooter a:hover {
+          color: #010101; }
       .footer .datosEmpresa .datosFooter .datosFooter_contenidos {
         padding-left: 2%;
         font-family: "Raleway", sans-serif;
         font-weight: 400;
         font-size: 18px; }
       .footer .datosEmpresa .datosFooter .img_footer {
-        width: 30px;
-        height: 30px; }
-  .footer p {
+        width: 40px; }
+  .footer .slogan__footer {
     color: #E7E7E2;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
