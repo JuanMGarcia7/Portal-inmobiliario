@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 .bgColor {
-  background-color: #E7E7E2; }
+  background-color: #FFF0E0; }
 
 header {
   width: 100%;
   z-index: 1;
   display: flex;
   border-bottom: 3px solid black;
-  background-color: #E7E7E2; }
+  background-color: #FFF0E0; }
   header #portalInmobiliario {
     display: flex;
     padding-left: 1%;
@@ -186,7 +186,8 @@ header {
       background-color: #4F4F4F;
       padding: .375rem .75rem;
       margin-left: 2%;
-      color: #E7E7E2;
+      margin-top: 1%;
+      color: #FFF0E0;
       border: none;
       font-family: "Raleway", sans-serif;
       -webkit-transition: all 300ms ease-out;
@@ -198,9 +199,11 @@ header {
         .contactForm .buttons .form__button {
           width: 15%; } }
     .contactForm .buttons #Enviar:hover {
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      background-color: #189d0e; }
     .contactForm .buttons #Borrar:hover {
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      background-color: #DB3232; }
 
 .logoWhatsApp {
   position: fixed;
@@ -276,7 +279,7 @@ header {
       .footer .datosEmpresa .datosFooter .img_footer {
         width: 40px; }
   .footer .slogan__footer {
-    color: #E7E7E2;
+    color: #FFF0E0;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     background-color: #4F4F4F;
@@ -370,68 +373,78 @@ header {
       .secVentas .titulos_venta {
         padding-top: 20%;
         width: 85%; } }
+    @media all and (max-width: 768px) {
+      .secVentas .titulos_venta {
+        padding-top: 25%; } }
   .secVentas .card {
     height: 600px;
     margin: auto;
     margin-top: 3%;
-    background-color: #E7E7E2;
+    background-color: #FFF0E0;
     border: 1px solid #010101;
     box-shadow: -4px 1px 12px 1px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: -4px 1px 12px 1px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: -4px 1px 12px 1px rgba(0, 0, 0, 0.6); }
+    @media all and (max-width: 1200px) {
+      .secVentas .card {
+        margin-top: 2%;
+        height: 450px; } }
     @media all and (max-width: 992px) {
       .secVentas .card {
         min-width: 80%;
         margin: auto;
-        margin-top: 2%;
         margin-bottom: 2%;
-        min-height: 100%; } }
+        flex-direction: row;
+        max-height: 400px; } }
     .secVentas .card img {
       width: 75%;
       margin: auto;
       padding-top: 4%; }
+      @media all and (max-width: 992px) {
+        .secVentas .card img {
+          width: 55%; } }
     .secVentas .card .card-body {
       width: 80%;
       margin: auto; }
-    .secVentas .card .btn-container {
-      display: flex;
-      width: 100%;
-      justify-content: center; }
-    .secVentas .card .btn-cards {
-      display: inline-block;
-      font-weight: 400;
-      text-align: center;
-      background-color: #4F4F4F;
-      padding: .375rem .75rem;
-      border-radius: .25rem;
-      color: #E7E7E2;
-      border: none;
-      font-family: "Raleway", sans-serif;
-      -webkit-transition: all 300ms ease-out;
-      -moz-transition: all 300ms ease-out;
-      -ms-transition: all 300ms ease-out;
-      -o-transition: all 300ms ease-out;
-      transition: all 300ms ease-out; }
-      .secVentas .card .btn-cards:hover {
-        background-color: #E7E7E2;
-        color: #4F4F4F;
-        border: 1px solid #4F4F4F; }
-    .secVentas .card textarea {
-      display: flex;
-      width: 97%;
-      margin: auto; }
+      .secVentas .card .card-body .btn-container {
+        display: flex;
+        width: 100%;
+        justify-content: center; }
+      .secVentas .card .card-body .btn-cards {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        background-color: #4F4F4F;
+        padding: .375rem .75rem;
+        border-radius: .25rem;
+        color: #FFF0E0;
+        border: none;
+        font-family: "Raleway", sans-serif;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out; }
+        .secVentas .card .card-body .btn-cards:hover {
+          background-color: #FFF0E0;
+          color: #4F4F4F;
+          border: 1px solid #4F4F4F; }
+      .secVentas .card .card-body textarea {
+        display: flex;
+        width: 97%;
+        margin: auto; }
   .secVentas .modal-footer {
     justify-content: center !important; }
     .secVentas .modal-footer .btn-secondary {
       background-color: #4F4F4F;
       font-family: "Raleway", sans-serif;
       font-size: 18px;
-      color: #E7E7E2;
+      color: #FFF0E0;
       -webkit-transition: all 300ms ease-out;
       -moz-transition: all 300ms ease-out;
       -ms-transition: all 300ms ease-out;
       -o-transition: all 300ms ease-out;
       transition: all 300ms ease-out; }
       .secVentas .modal-footer .btn-secondary:hover {
-        background-color: #E7E7E2;
+        background-color: #FFF0E0;
         color: #4F4F4F; }
