@@ -87,20 +87,20 @@
 					Contactanos!
 				</p>
 			</div>
-			<form id="contacto" class="contactForm wow animate__animated animate__slideInUp">
+			<form id="contacto" class="contactForm wow animate__animated animate__slideInUp" needs-validation>
 			  	<div class="form-row">
 			    	<div class="form-group col-md-6">
 			    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
-			    		<input type="text" class="form-control" id="inputNombre4">
+			    		<input type="text" class="form-control" id="inputNombre4" required>
 			    	</div>
 			    	<div class="form-group col-md-6">
 			    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
-			    		<input type="text" class="form-control" id="inputApellido4">
+			    		<input type="text" class="form-control" id="inputApellido4" required>
 			    	</div>
 				</div>
 				<div class="form-group">
 			    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
-			    	<input type="text" class="form-control" id="inputMail" >
+			    	<input type="text" class="form-control" id="inputMail" required>
 				</div>			
 			 	<div class="form-row">
 			    	<div class="form-group col-md-6">
@@ -113,15 +113,30 @@
 			        		<option selected> Seleccione...</option>
 			        		<option>Venta</option>
 			        		<option>Alquiler</option>
-			        		<option>Alquiler temporario</option>
 			      		</select>
 			    	</div>
 			    	<div class="textarea w-100">
-			      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
+			      		<textarea placeholder="Ingrese su consulta" class="textArea" required></textarea>	
 			    	</div>
 			 	 </div>
 			 	 <div class="buttons">
-				 	<input class="form__button rounded-pill" type="submit" id="Enviar" name="enviar" value="Enviar">
+				 	<button type="button" id="Enviar" class="form__button rounded-pill"   data-toggle="modal" data-target="#envioContacto" >
+							  Enviar
+							</button>
+
+							<!-- Modal boton enviar de seccion contacto-->
+							<div class="modal fade" id="envioContacto" tabindex="-1"  aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">						
+							      <div class="modal-body msj-respuesta">
+							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 					<input class="form__button rounded-pill" type="reset" id="Borrar" name="reset" value="Borrar ">	
 				</div>	  	
 			</form>
@@ -146,7 +161,7 @@
 							<a href="https://www.instagram.com/theluxuryprop/" target="_blank">
 							<img class="img_footer " src="media/logoInsta.png" ></a>
 							<a href="https://www.instagram.com/theluxuryprop/"  target="_blank">
-								<p class="datosFooter_contenidos" > Instagram </p>
+								<p class="datosFooter_contenidos logoInstagram" > Instagram </p>
 							</a>
 						</div>
 						<div class="datosFooter">
@@ -168,6 +183,5 @@
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
 		</script>
-	</div>
 </body>
 </html>
