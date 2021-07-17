@@ -5,7 +5,7 @@
 	<meta name="description" content="Propiedades en venta">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Propiedades en venta</title>
+	<title>Emprendimientos</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -15,7 +15,7 @@
 </head>
 <body class="bgColor">
 	<section class="bodyGeneral">
-	<header class="header position-fixed d-flex ">
+		<header class="header position-fixed d-flex ">
 			<div id="portalInmobiliario">
 				<nav  class=" navbar ">
 				 	<a class="navbar-brand" href="../index.html">
@@ -24,422 +24,388 @@
 				  	</a>
 				</nav>
 			</div>
-		<div class="nosotrosGeneral">
-			<nav class="navbar navbar-expand-lg navbar-light w-100">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				    <div class="navbar-nav">
-				      	<a class="nav-link" href="../index.html" > Inicio </a> 
-				      	<div class="dropdown">
-						  <a class="btn nav-link dropdown-toggle active"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Servicios
-						  </a>
-
-						  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						    <a class="dropdown-item" href="venta.html">Venta</a>
-						    <a class="dropdown-item" href="alquileres.html">Alquileres</a>
-						  </div>
-						</div>
-				      	<a class="nav-link " href="emprendimientos.html" > Emprendimientos</a>
-				      	<a class="nav-link " href="nosotros.html" > Nosotros</a>
-				    	<a class="nav-link" href=../index.html#contacto > Contacto</a>
+			<div class="nosotrosGeneral">
+				<nav class="navbar navbar-expand-lg navbar-light w-100">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					    <div class="navbar-nav">
+					      	<a class="nav-link" href="../index.html" > Inicio </a> 
+					      	<div class="dropdown">
+								<a class="btn nav-link dropdown-toggle"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Servicios
+								</a>
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							    <a class="dropdown-item" href="venta.html">Venta</a>
+							    <a class="dropdown-item" href="alquileres.html">Alquileres</a>
+							  </div>
+							</div>
+					      	<a class="nav-link active" href="emprendimientos.html" > Emprendimientos</a>
+					      	<a class="nav-link " href="nosotros.html" > Nosotros</a>
+					    	<a class="nav-link" href=../index.html#contacto > Contacto</a>
+					    </div>
+					</div>
+				</nav> 
+			</div>
+		</header>
+	</section>
+	<section class="emprendimientos_container">
+		<h3 class="emprendimiento_titulo">Emprendimientos</h3>
+		<div class="row">
+			<div class="carrousel_emprendimientos col-4">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="../media/empCarr1Img1.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
 				    </div>
+				    <div class="carousel-item">
+				      <img src="../media/empCarr1Img2.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../media/empCarr1Img3.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
 				</div>
-			</nav> 
+				<h5> Emprendimiento Palermo Soho</h5>
+				<p>Desarrollo producido en 10 plantas, con 3 unidades por piso (hasta el 7mo), y a partir del 8vo un depto por planta.</p>
+				<ul>
+					<li>Pisos de porcelanato.</li>
+					<li>Griferia Johnson Acero.</li>
+					<li>Sistema de acceso electronico.</li>
+				</ul>
+				<div class="btn-container">
+						<button type="button" class="btn-gral" data-toggle="modal" data-target="#car1">
+						  Consulte
+						</button>
+					</div>	
+					<div class="modal fade" id="car1" tabindex="-1" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <p class="modal-title" >Formulario de consulta</p>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
+								  	<div class="form-row">
+								    	<div class="form-group col-md-6">
+								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
+								    		<input type="text" class="form-control" id="inputNombre4">
+								    	</div>
+								    	<div class="form-group col-md-6">
+								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
+								    		<input type="text" class="form-control" id="inputApellido4">
+								    	</div>
+									</div>
+									<div class="form-group">
+								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
+								    	<input type="text" class="form-control" id="inputMail" >
+									</div>			
+								 	<div class="form-row">								
+								 		<div class="textarea w-100">
+								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
+								    	</div>
+								 	 </div>  	
+								</form>
+					      </div>
+							<button type="button" class="btn-gral"  data-dismiss="#car1" data-toggle="modal" data-target="#envioCar1" >
+							  Enviar
+							</button>
+							<div class="modal fade" id="envioCar1" tabindex="-1"  aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">						
+							       <div class="modal-body msj-respuesta">
+							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					  </div>
+					</div>
+			</div>
+			<div class="carrousel_emprendimientos col-4">
+				<div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="../media/empCarr2Img1.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../media/empCarr2Img2.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../media/empCarr2Img3.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				<h5> Emprendimiento Villa crespo</h5>
+				<p>Excelente edificio, de 12 plantas y pb. Unidades de 40,55 y 85mts.</p>
+				<ul>
+					<li>Pisos de porcelanato.</li>
+					<li>Griferia FV.</li>
+					<li>Calefaccion central, por radiadores.</li>
+				</ul>
+			<div class="btn-container">
+						<button type="button" class="btn-gral" data-toggle="modal" data-target="#car2">
+						  Consulte
+						</button>
+					</div>	
+					<div class="modal fade" id="car2" tabindex="-1" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <p class="modal-title" >Formulario de consulta</p>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
+								  	<div class="form-row">
+								    	<div class="form-group col-md-6">
+								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
+								    		<input type="text" class="form-control" id="inputNombre4">
+								    	</div>
+								    	<div class="form-group col-md-6">
+								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
+								    		<input type="text" class="form-control" id="inputApellido4">
+								    	</div>
+									</div>
+									<div class="form-group">
+								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
+								    	<input type="text" class="form-control" id="inputMail" >
+									</div>			
+								 	<div class="form-row">								
+								 		<div class="textarea w-100">
+								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
+								    	</div>
+								 	 </div>  	
+								</form>
+					      </div>
+							<button type="button" class="btn-gral"  data-dismiss="#card6" data-toggle="modal" data-target="#envioCar2" >
+							  Enviar
+							</button>
+							<div class="modal fade" id="envioCar2" tabindex="-1"  aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">						
+							       <div class="modal-body msj-respuesta">
+							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					  </div>
+					</div>
+			</div>
 		</div>
-	</header>
+		<div class="row">
+			<div class="carrousel_emprendimientos col-4">
+				<div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="../media/empCarr3Img1.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../media/empCarr3Img2.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../media/empCarr3Img3.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				<h5> Emprendimiento Palermo Soho</h5>
+				<p>Semipisos de 1 y 2 dormis del 2° al 10°. Piso exclusivo de 3 dormis en el 11° piso, con terraza.</p>
+				<ul>
+					<li>Pisos de porcelanato.</li>
+					<li>Calefaccion por radiodores.</li>
+					<li>Pilte y gym.</li>
+				</ul>
+					<div class="btn-container">
+						<button type="button" class="btn-gral" data-toggle="modal" data-target="#car3">
+						  Consulte
+						</button>
+					</div>	
+					<div class="modal fade" id="car3" tabindex="-1" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <p class="modal-title" >Formulario de consulta</p>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
+								  	<div class="form-row">
+								    	<div class="form-group col-md-6">
+								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
+								    		<input type="text" class="form-control" id="inputNombre4">
+								    	</div>
+								    	<div class="form-group col-md-6">
+								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
+								    		<input type="text" class="form-control" id="inputApellido4">
+								    	</div>
+									</div>
+									<div class="form-group">
+								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
+								    	<input type="text" class="form-control" id="inputMail" >
+									</div>			
+								 	<div class="form-row">								
+								 		<div class="textarea w-100">
+								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
+								    	</div>
+								 	 </div>  	
+								</form>
+					      </div>
+							<button type="button" class="btn-gral"  data-dismiss="#car3" data-toggle="modal" data-target="#envioCar3" >
+							  Enviar
+							</button>
+							<div class="modal fade" id="envioCar3" tabindex="-1"  aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">						
+							       <div class="modal-body msj-respuesta">
+							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					  </div>
+					</div>
+			</div>
+			<div class="carrousel_emprendimientos col-4">
+				<div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="../media/empCarr4Img1.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../media/empCarr4Img2.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="../media/empCarr4Img3.jpg" class="d-block w-100 imgCarrousel_emp" alt="Proyecto de pozo">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				<h5> Emprendimiento Belgrano</h5>
+				<p>Edificio eco-friendly. Oficinas del 1° al 4°, y en adelante deptos de 2 dormis.</p>
+				<ul>
+					<li>Pisos de porcelanato.</li>
+					<li>Griferia Johnson Acero.</li>
+					<li>Losa radiante.</li>
+				</ul>
+					<div class="btn-container">
+						<button type="button" class="btn-gral" data-toggle="modal" data-target="#car4">
+						  Consulte
+						</button>
+					</div>	
+					<div class="modal fade" id="car4" tabindex="-1" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <p class="modal-title" >Formulario de consulta</p>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
+								  	<div class="form-row">
+								    	<div class="form-group col-md-6">
+								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
+								    		<input type="text" class="form-control" id="inputNombre4">
+								    	</div>
+								    	<div class="form-group col-md-6">
+								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
+								    		<input type="text" class="form-control" id="inputApellido4">
+								    	</div>
+									</div>
+									<div class="form-group">
+								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
+								    	<input type="text" class="form-control" id="inputMail" >
+									</div>			
+								 	<div class="form-row">								
+								 		<div class="textarea w-100">
+								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
+								    	</div>
+								 	 </div>  	
+								</form>
+					      </div>
+							<button type="button" class="btn-gral"  data-dismiss="#car4" data-toggle="modal" data-target="#envioCar4" >
+							  Enviar
+							</button>
+							<div class="modal fade" id="envioCar4" tabindex="-1"  aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">						
+							       <div class="modal-body msj-respuesta">
+							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					  </div>
+					</div>
+				</div>										
 	</section>
-	<section class="secVentas">
-		<h1 class="titulos_venta"> Propiedades disponibles para la venta </h1>
-			<div class="cards_ventas row">
-				<div class="card  col-4" style="width: 18rem;">
-				  <img src="../media/card1.jpg" class="card-img-top" alt="depto de 1 dormitorio">
-				  <div class="card-body">
-				    <p class="card-title">Abeberry al 500</p>
-				    <p class="card-text">Departamento de 1 dormitorio, cocina comedor,y baño. Cuenta con un balcon al frente.</p>
-				    <div class="btn-container">
-						<button type="button" class="btn-gral" data-toggle="modal" data-target="#card1">
-						  Consulte
-						</button>
-					</div>	
-					<div class="modal fade" id="card1" tabindex="-1" aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <p class="modal-title">Formulario de consulta</p>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
-								  	<div class="form-row">
-								    	<div class="form-group col-md-6">
-								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
-								    		<input type="text" class="form-control" id="inputNombre4">
-								    	</div>
-								    	<div class="form-group col-md-6">
-								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
-								    		<input type="text" class="form-control" id="inputApellido4">
-								    	</div>
-									</div>
-									<div class="form-group">
-								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
-								    	<input type="text" class="form-control" id="inputMail" >
-									</div>			
-								 	<div class="form-row">								
-								 		<div class="textarea w-100">
-								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
-								    	</div>
-								 	 </div>  	
-								</form>
-					      </div>
-							<button type="button" class="btn-gral"  data-dismiss="#card1" data-toggle="modal" data-target="#envioCard1" >
-							  Enviar
-							</button>
-							<div class="modal fade" id="envioCard1" tabindex="-1"  aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">						
-							       <div class="modal-body msj-respuesta">
-							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
-							      </div>
-							    </div>
-							  </div>
-							</div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<div class="card  col-4" style="width: 18rem;">
-				  <img src="../media/card2.jpeg" class="card-img-top" alt="depto frente al lago">
-				  <div class="card-body">
-				    <p class="card-title">Frente al lago</p>
-				    <p class="card-text">Depto ideal inversor, zona del lago. Cuenta con 2 dormis, living comedor, cocina integrada y 2 baños.</p>
-					<div class="btn-container">
-						<button type="button" class="btn-gral" data-toggle="modal" data-target="#card2">
-						  Consulte
-						</button>
-					</div>	
-					<div class="modal fade" id="card2" tabindex="-1"  aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <p class="modal-title" >Formulario de consulta</p>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
-								  	<div class="form-row">
-								    	<div class="form-group col-md-6">
-								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
-								    		<input type="text" class="form-control" id="inputNombre4">
-								    	</div>
-								    	<div class="form-group col-md-6">
-								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
-								    		<input type="text" class="form-control" id="inputApellido4">
-								    	</div>
-									</div>
-									<div class="form-group">
-								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
-								    	<input type="text" class="form-control" id="inputMail" >
-									</div>			
-								 	<div class="form-row">								
-								 		<div class="textarea w-100">
-								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
-								    	</div>
-								 	 </div>  	
-								</form>
-					      </div>
-							<button type="button" class="btn-gral"  data-dismiss="#card2" data-toggle="modal" data-target="#envioCard2" >
-							  Enviar
-							</button>
-							<div class="modal fade" id="envioCard2" tabindex="-1"  aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">						
-							       <div class="modal-body msj-respuesta">
-							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
-							      </div>
-							    </div>
-							  </div>
-							</div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="card  col-4" style="width: 18rem;">
-				  <img src="../media/card3.jpeg" class="card-img-top" alt="Oficina en puerto madero">
-				  <div class="card-body">
-				    <p class="card-title">Oficina de lujo</p>
-				    <p class="card-text">Excelente oficina ubicada en Puerto Madero. 3 ambientes</p>
-					<div class="btn-container">
-						<button type="button" class="btn-gral" data-toggle="modal" data-target="#card3">
-						  Consulte
-						</button>
-					</div>	
-					<div class="modal fade" id="card3" tabindex="-1" aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <p class="modal-title" >Formulario de consulta</p>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
-								  	<div class="form-row">
-								    	<div class="form-group col-md-6">
-								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
-								    		<input type="text" class="form-control" id="inputNombre4">
-								    	</div>
-								    	<div class="form-group col-md-6">
-								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
-								    		<input type="text" class="form-control" id="inputApellido4">
-								    	</div>
-									</div>
-									<div class="form-group">
-								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
-								    	<input type="text" class="form-control" id="inputMail" >
-									</div>			
-								 	<div class="form-row">								
-								 		<div class="textarea w-100">
-								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
-								    	</div>
-								 	 </div>  	
-								</form>
-					      </div>
-							<button type="button" class="btn-gral"  data-dismiss="#card3" data-toggle="modal" data-target="#envioCard3" >
-							  Enviar
-							</button>
-							<div class="modal fade" id="envioCard3" tabindex="-1"  aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">						
-							       <div class="modal-body msj-respuesta">
-							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
-							      </div>
-							    </div>
-							  </div>
-							</div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<div class="card  col-4" style="width: 18rem;">
-				  <img src="../media/card4.jpeg" class="card-img-top" alt="Loft">
-				  <div class="card-body">
-				    <p class="card-title">Loft en Palermo</p>
-				    <p class="card-text">Loft en excelente estado. Consta de 1 dormi, living comedor, cocina  y 2 baños.Balcon al frente.</p>
-					<div class="btn-container">
-						<button type="button" class="btn-gral" data-toggle="modal" data-target="#card4">
-						  Consulte
-						</button>
-					</div>	
-					<div class="modal fade" id="card4" tabindex="-1"  aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <p class="modal-title" >Formulario de consulta</p>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
-								  	<div class="form-row">
-								    	<div class="form-group col-md-6">
-								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
-								    		<input type="text" class="form-control" id="inputNombre4">
-								    	</div>
-								    	<div class="form-group col-md-6">
-								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
-								    		<input type="text" class="form-control" id="inputApellido4">
-								    	</div>
-									</div>
-									<div class="form-group">
-								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
-								    	<input type="text" class="form-control" id="inputMail" >
-									</div>			
-								 	<div class="form-row">								
-								 		<div class="textarea w-100">
-								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
-								    	</div>
-								 	 </div>  	
-								</form>
-					      </div>
-							<button type="button" class="btn-gral"  data-dismiss="#card4" data-toggle="modal" data-target="#envioCard4" >
-							  Enviar
-							</button>
-							<div class="modal fade" id="envioCard4" tabindex="-1" aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">						
-							       <div class="modal-body msj-respuesta">
-							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
-							      </div>
-							    </div>
-							  </div>
-							</div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="card  col-4" style="width: 18rem;">
-				  <img src="../media/card5.jpeg" class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <p class="card-title">Loft en Villa Crespo</p>
-				    <p class="card-text">Loft a estrenar en Villa Crespo. 2 ambientes, impecable estado. </p>
-					<div class="btn-container">
-						<button type="button" class="btn-gral" data-toggle="modal" data-target="#card5">
-						  Consulte
-						</button>
-					</div>	
-					<div class="modal fade" id="card5" tabindex="-1" aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <p class="modal-title" >Formulario de consulta</p>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
-								  	<div class="form-row">
-								    	<div class="form-group col-md-6">
-								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
-								    		<input type="text" class="form-control" id="inputNombre4">
-								    	</div>
-								    	<div class="form-group col-md-6">
-								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
-								    		<input type="text" class="form-control" id="inputApellido4">
-								    	</div>
-									</div>
-									<div class="form-group">
-								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
-								    	<input type="text" class="form-control" id="inputMail" >
-									</div>			
-								 	<div class="form-row">								
-								 		<div class="textarea w-100">
-								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
-								    	</div>
-								 	 </div>  	
-								</form>
-					      </div>
-							<button type="button" class="btn-gral"  data-dismiss="#card5" data-toggle="modal" data-target="#envioCard5" >
-							  Enviar
-							</button>
-							<div class="modal fade" id="envioCard5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">						
-							      <div class="modal-body msj-respuesta">
-							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
-							      </div>
-							    </div>
-							  </div>
-							</div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-				<div class="card  col-4" style="width: 18rem;">
-				  <img src="../media/card6.jpeg" class="card-img-top" alt="Monoambiente">
-				  <div class="card-body">
-				    <p class="card-title">Monoambiente en Recoleta</p>
-				    <p class="card-text">Excelente monoambiente en pleno Recoleta, ideal inversor. Digno de ver.</p>
-					<div class="btn-container">
-						<button type="button" class="btn-gral" data-toggle="modal" data-target="#card6">
-						  Consulte
-						</button>
-					</div>	
-					<div class="modal fade" id="card6" tabindex="-1" aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <p class="modal-title" >Formulario de consulta</p>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        <form id="contacto" class="contactForm wow animate__animated animate__slideInUp w-100 ">
-								  	<div class="form-row">
-								    	<div class="form-group col-md-6">
-								    		<label for="inputNombre4" class="contactForm__datos">Nombre</label>
-								    		<input type="text" class="form-control" id="inputNombre4">
-								    	</div>
-								    	<div class="form-group col-md-6">
-								    		<label for="inputApellido4" class="contactForm__datos">Apellido</label>
-								    		<input type="text" class="form-control" id="inputApellido4">
-								    	</div>
-									</div>
-									<div class="form-group">
-								    	<label for="inputEmail" class="contactForm__datos"> Mail</label>
-								    	<input type="text" class="form-control" id="inputMail" >
-									</div>			
-								 	<div class="form-row">								
-								 		<div class="textarea w-100">
-								      		<textarea placeholder="Ingrese su consulta" class="textArea"></textarea>	
-								    	</div>
-								 	 </div>  	
-								</form>
-					      </div>
-							<button type="button" class="btn-gral"  data-dismiss="#card6" data-toggle="modal" data-target="#envioCard6" >
-							  Enviar
-							</button>
-							<div class="modal fade" id="envioCard6" tabindex="-1"  aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">						
-							       <div class="modal-body msj-respuesta">
-							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
-							      </div>
-							    </div>
-							  </div>
-							</div>
-						</div>
-					  </div>
-					</div>
-				   
-				  </div>
-				</div>			
-			</div>
 
 
-	</section>
-		<div>
-			<div class="logoWhatsApp">
-				<a href="https://web.whatsapp.com/" target="_blank"><img src="../media/logoWhats.PNG"> </a>
-			</div>
-		</div>	
+
+
+
+	<div>
+		<div class="logoWhatsApp">
+			<a href="https://web.whatsapp.com/" target="_blank"><img src="../media/logoWhats.PNG"> </a>
+		</div>
+	</div>	
 		<section class="footer">
 			<footer>
 				<div class="container-footer">
@@ -465,7 +431,6 @@
 						</div>
 					</div>
 				</div>
-
 				<p class="slogan__footer"> Desde 2021 | Tu portal®</p>
 			</footer>
 		</section>	

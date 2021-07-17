@@ -12,12 +12,15 @@ header {
   header #portalInmobiliario {
     display: flex;
     padding-left: 1%;
-    width: 60%; }
+    width: 40%; }
+    @media all and (max-width: 786px) {
+      header #portalInmobiliario {
+        align-items: flex-start; } }
     header #portalInmobiliario .navbar-brand {
       font-size: 30px;
       color: #4F4F4F;
       font-family: "Raleway", sans-serif; }
-      @media all and (max-width: 576px) {
+      @media all and (max-width: 786px) {
         header #portalInmobiliario .navbar-brand {
           font-size: 20px; } }
     header #portalInmobiliario .logo {
@@ -40,13 +43,14 @@ header {
     @media all and (max-width: 992px) {
       header .nosotrosGeneral .navbar {
         display: flex;
-        justify-content: flex-end; } }
+        justify-content: flex-end;
+        align-items: flex-start; } }
     header .nosotrosGeneral .navbar-nav .nav-link {
-      margin-right: 10%;
+      margin-right: 7.5%;
       color: #4F4F4F;
       transition: all 300ms ease-in-out; }
       header .nosotrosGeneral .navbar-nav .nav-link:hover {
-        transform: scale(1.3);
+        transform: scale(1.2);
         color: #010101; }
     header .nosotrosGeneral #dropdownMenuLink {
       font-weight: 500;
@@ -74,6 +78,12 @@ header {
   padding-top: 25%;
   background-color: rgba(255, 255, 255, 0.3);
   height: 100vh; }
+  @media all and (max-width: 992px) {
+    .frase-portada {
+      padding-top: 35%; } }
+  @media all and (max-width: 576px) {
+    .frase-portada {
+      padding-top: 45%; } }
 
 .destacados .destacados__titulos {
   font-size: 30px;
@@ -198,6 +208,9 @@ header {
       @media all and (max-width: 768px) {
         .contactForm .buttons .form__button {
           width: 15%; } }
+      @media all and (max-width: 576px) {
+        .contactForm .buttons .form__button {
+          width: 25%; } }
     .contactForm .buttons #Enviar:hover {
       transform: scale(1.1);
       background-color: #189d0e; }
@@ -280,7 +293,7 @@ header {
         font-size: 18px; }
       .footer .datosEmpresa .datosFooter .img_footer {
         width: 40px; }
-        @media all and (max-width: 576px) {
+        @media all and (max-width: 768px) {
           .footer .datosEmpresa .datosFooter .img_footer {
             height: 40px; } }
   .footer .slogan__footer {
@@ -368,6 +381,36 @@ header {
     margin-bottom: 2%;
     font-weight: 400; }
 
+/* boton gral*/
+.btn-gral {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  background-color: #4F4F4F;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  color: #FFF0E0;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  margin-bottom: 2%; }
+  .btn-gral:hover {
+    background-color: #FFF0E0;
+    color: #4F4F4F !important;
+    border: 1px solid #4F4F4F; }
+  .btn-gral:focus {
+    box-shadow: none; }
+
+.btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+
 /*ventas-alq html*/
 .secVentas {
   overflow: hidden; }
@@ -411,6 +454,9 @@ header {
         margin-bottom: 2%;
         flex-direction: row;
         max-height: 400px; } }
+    @media all and (max-width: 576px) {
+      .secVentas .card {
+        flex-direction: column; } }
     .secVentas .card img {
       width: 75%;
       margin: auto;
@@ -425,33 +471,6 @@ header {
     .secVentas .card .card-body {
       width: 80%;
       margin: auto; }
-      .secVentas .card .card-body .btn-container {
-        display: flex;
-        width: 100%;
-        justify-content: center; }
-      .secVentas .card .card-body .btn-cards {
-        display: inline-block;
-        font-weight: 400;
-        text-align: center;
-        margin: auto;
-        background-color: #4F4F4F;
-        padding: .375rem .75rem;
-        border-radius: .25rem;
-        color: #FFF0E0;
-        border: none;
-        font-family: "Raleway", sans-serif;
-        -webkit-transition: all 300ms ease-out;
-        -moz-transition: all 300ms ease-out;
-        -ms-transition: all 300ms ease-out;
-        -o-transition: all 300ms ease-out;
-        transition: all 300ms ease-out;
-        margin-bottom: 2%; }
-        .secVentas .card .card-body .btn-cards:hover {
-          background-color: #FFF0E0;
-          color: #4F4F4F;
-          border: 1px solid #4F4F4F; }
-        .secVentas .card .card-body .btn-cards:focus {
-          box-shadow: none; }
       .secVentas .card .card-body textarea {
         display: flex;
         width: 97%;
@@ -491,3 +510,37 @@ header {
     background-image: url(../media/fondoConsulta.png);
     background-position: center;
     height: 25rem; }
+
+.emprendimientos_container {
+  overflow: hidden; }
+  .emprendimientos_container .emprendimiento_titulo {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1%;
+    border-bottom: 1px solid black;
+    color: grey;
+    margin-bottom: 2%;
+    font-weight: 500;
+    padding-top: 10%; }
+    @media all and (max-width: 992px) {
+      .emprendimientos_container .emprendimiento_titulo {
+        width: 85%;
+        padding-top: 25%; } }
+  .emprendimientos_container .carrousel_emprendimientos {
+    border: 1px solid #010101;
+    padding: 2%;
+    margin: auto;
+    margin-top: 3%;
+    box-shadow: -4px 1px 12px 1px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: -4px 1px 12px 1px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: -4px 1px 12px 1px rgba(0, 0, 0, 0.6); }
+    @media all and (max-width: 992px) {
+      .emprendimientos_container .carrousel_emprendimientos {
+        min-width: 80%;
+        margin: auto;
+        margin-bottom: 2%;
+        flex-direction: row;
+        min-height: 400px; } }

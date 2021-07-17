@@ -14,7 +14,10 @@ header {
 	#portalInmobiliario  {
 	display: flex;
 	padding-left: 1%;
-	width: 60%;
+	width: 40%;
+		@media all and (max-width: 786px){
+			align-items:flex-start;
+		}
 
 
 
@@ -23,16 +26,20 @@ header {
 		color: $cPrimario;
 		font-family: $fuente;
 
-		@media all and (max-width: 576px){
-			font-size: $fuente-l;
-		}
+			@media all and (max-width: 786px){
+				font-size: $fuente-l;
+			}
 		}
 
 			.logo {
 				width: 65px;
 				height: 60px;
 			}
+
+
 	}
+
+
 
 	a {
 	text-decoration: none;
@@ -57,17 +64,18 @@ header {
 				@media all and (max-width: 992px){
 						display: flex;
 						justify-content: flex-end;
+						align-items: flex-start;
 					
 				}
 
 			}
 			.navbar-nav {
 				.nav-link{
-					margin-right: 10%;
+					margin-right: 7.5%;
 					color: $cPrimario;
 					transition: all 300ms ease-in-out;
 					&:hover{
-					transform: scale(1.3);
+					transform: scale(1.2);
 					color: #010101;
 					}
 				}
@@ -111,6 +119,13 @@ header {
 	padding-top: 25%;
 	background-color: rgba( 255,255,255, .3);
 	height: 100vh;
+
+			@media all and (max-width: 992px){
+				padding-top:35%;
+			}
+			@media all and (max-width: 576px){
+				padding-top: 45%;
+			}
 
 }
 
@@ -281,6 +296,9 @@ header {
 				@media all and (max-width: 768px){
 					width: 15%;
 				}
+				@media all and (max-width: 576px) {
+					width: 25%;
+				}
 			}
 
 			#Enviar:hover {
@@ -403,7 +421,7 @@ header {
 					.img_footer{
 						width: 40px;
 
-						@media all and (max-width: 576px){
+						@media all and (max-width: 768px){
 							height: 40px;
 						}
 						
@@ -525,7 +543,41 @@ header {
 			font-weight: $fuente-regular;
 		}
 	}
+/* boton gral*/
+	.btn-gral{
+		display: inline-block;
+		font-weight: $fuente-regular;
+		text-align: center;
+		margin: auto;
+		background-color: $cPrimario;
+		padding: .375rem .75rem;
+		border-radius: .25rem;
+		color: $cFondo;
+		border: none;
+		font-family: $fuente;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		transition: all 300ms ease-out;
+		margin-bottom:2%;
 
+			&:hover{
+				background-color:$cFondo;
+				color: $cPrimario !important;
+				border:1px solid $cPrimario;
+
+			}	
+
+			&:focus{
+				box-shadow:none;
+			}				
+	}
+	.btn-container{
+				display: flex;
+				width: 100%;
+				justify-content: center;
+			}
 /*ventas-alq html*/
 	
 .secVentas{
@@ -579,6 +631,10 @@ header {
 
 			}
 
+			@media all and (max-width: 576px){
+				flex-direction: column;
+			}
+
 			img{
 				width: 75%;
 				margin:auto;
@@ -597,40 +653,8 @@ header {
 			.card-body{
 				width: 80%;
 				margin: auto;
-				.btn-container{
-					display: flex;
-					width: 100%;
-					justify-content: center;
-				}
-				.btn-cards{
-					display: inline-block;
-					font-weight: $fuente-regular;
-					text-align: center;
-					margin: auto;
-					background-color: $cPrimario;
-					padding: .375rem .75rem;
-					border-radius: .25rem;
-					color: $cFondo;
-					border: none;
-					font-family: $fuente;
-					-webkit-transition: all 300ms ease-out;
-					-moz-transition: all 300ms ease-out;
-					-ms-transition: all 300ms ease-out;
-					-o-transition: all 300ms ease-out;
-					transition: all 300ms ease-out;
-					margin-bottom:2%;
-
-						&:hover{
-							background-color:$cFondo;
-							color: $cPrimario;
-							border:1px solid $cPrimario;
-
-						}	
-
-						&:focus{
-							box-shadow:none;
-						}				
-				}
+				
+			
 				textarea{
 					display: flex;
 					width:97%;
@@ -684,3 +708,50 @@ header {
 			height: 25rem;
 		}
 	}
+
+.emprendimientos_container{
+overflow: hidden;
+
+	.emprendimiento_titulo {
+		font-family:  $fuente;
+		font-size: 30px;
+		width: 30%;
+		margin: auto;
+		text-align: center;
+		padding-bottom: 1%;
+		border-bottom: 1px solid black;
+		color: grey;
+		margin-bottom: 2%;
+		font-weight: $fuente-bold;
+		padding-top:10%;
+
+			@media all and (max-width: 992px){
+				width: 85%;
+				padding-top:25%;
+			}
+	}
+	.carrousel_emprendimientos {
+		border: 1px solid #010101;
+		padding:2%;
+		margin: auto;
+		margin-top: 3%;
+		box-shadow: -4px 1px 12px 1px rgba(0,0,0,0.6);
+		-webkit-box-shadow: -4px 1px 12px 1px rgba(0,0,0,0.6);
+		-moz-box-shadow: -4px 1px 12px 1px rgba(0,0,0,0.6);
+
+			@media all and (max-width: 992px) {
+					min-width: 80%;
+					margin: auto;
+					margin-bottom: 2%;
+					flex-direction: row;
+					min-height: 400px;
+
+				}
+
+
+		.imgCarrousel_emp{
+		
+		}
+	}
+}
+
