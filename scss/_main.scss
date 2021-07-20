@@ -237,6 +237,8 @@ header {
 	border: 1px solid black;
 	box-shadow: -4px 4px 6px 0px rgba(0,0,0,0.75);
 	background-image:url(../media/fondo.JPEG);
+	margin-bottom: 3%;
+	min-height: 540px;
 
 
 
@@ -253,6 +255,10 @@ header {
 			font-family: $fuente;
 			font-size: $fuente-m;
 
+		}
+
+		.form-row {
+			padding-top:2.5%;
 		}
 
 		textarea {
@@ -311,6 +317,7 @@ header {
 				background-color:#DB3232;
 			}
 		}
+
 	}
 
 .logoWhatsApp {
@@ -692,22 +699,7 @@ header {
 				}
 			}
 	}
-	.modal-content {
-		min-height: 30rem;
-
-		.msj-respuesta {
-			display: flex;
-			font-family: $fuente;
-			font-size: $fuente-xl;
-			font-weight: $fuente-regular;
-			text-align:center;
-			padding-top:20%;
-			flex:0 1 auto ;
-			background-image: url(../media/fondoConsulta.png);
-			background-position:center;
-			height: 25rem;
-		}
-	}
+	
 
 .emprendimientos_container{
 overflow: hidden;
@@ -754,4 +746,20 @@ overflow: hidden;
 		}
 	}
 }
+.modal-content {
+		min-height: 30rem;
+
+		.msj-respuesta {
+			display: flex;
+			font-family: $fuente;
+			font-size: $fuente-xl;
+			font-weight: $fuente-regular;
+			text-align:center;
+			padding-top:20%;
+			flex:0 1 auto ;
+			background-image: url(../media/fondoConsulta.png);
+			background-position:center;
+			height: 25rem;
+		}
+	}
 

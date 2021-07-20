@@ -165,7 +165,9 @@ header {
   padding: 1%;
   border: 1px solid black;
   box-shadow: -4px 4px 6px 0px rgba(0, 0, 0, 0.75);
-  background-image: url(../media/fondo.JPEG); }
+  background-image: url(../media/fondo.JPEG);
+  margin-bottom: 3%;
+  min-height: 540px; }
   @media all and (max-width: 992px) {
     .contactForm {
       width: 80%; } }
@@ -176,6 +178,8 @@ header {
   .contactForm .contactForm__datos {
     font-family: "Raleway", sans-serif;
     font-size: 18px; }
+  .contactForm .form-row {
+    padding-top: 2.5%; }
   .contactForm textarea {
     width: 100%;
     resize: none;
@@ -497,20 +501,6 @@ header {
       background-color: #FFF0E0;
       color: #4F4F4F; }
 
-.modal-content {
-  min-height: 30rem; }
-  .modal-content .msj-respuesta {
-    display: flex;
-    font-family: "Raleway", sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: center;
-    padding-top: 20%;
-    flex: 0 1 auto;
-    background-image: url(../media/fondoConsulta.png);
-    background-position: center;
-    height: 25rem; }
-
 .emprendimientos_container {
   overflow: hidden; }
   .emprendimientos_container .emprendimiento_titulo {
@@ -544,3 +534,17 @@ header {
         margin-bottom: 2%;
         flex-direction: row;
         min-height: 400px; } }
+
+.modal-content {
+  min-height: 30rem; }
+  .modal-content .msj-respuesta {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20%;
+    flex: 0 1 auto;
+    background-image: url(../media/fondoConsulta.png);
+    background-position: center;
+    height: 25rem; }

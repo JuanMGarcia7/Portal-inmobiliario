@@ -15,7 +15,6 @@
 </head>
 <body class="bgColor">
 	<section class="bodyGeneral">
-<!-- encabezado, podria dejarlo asi, o poner todo a la misma altura, y dejarlo fixed, ver. Pricipales enlaces -->	
 		<header class="header position-fixed d-flex">
 			<div id="portalInmobiliario">
 				<nav  class=" navbar ">
@@ -120,18 +119,18 @@
 			      		<textarea placeholder="Ingrese su consulta" class="textArea" required></textarea>	
 			    	</div>
 			 	 </div>
-			 	 <div class="buttons">
-				 	<button type="button" id="Enviar"  class="form__button rounded-pill" data-dismiss="#envioContacto" data-toggle="modal" data-target="#envioContacto" >
-							  Enviar
+			 	 <div class="buttons"> 
+				 	<button type="button" id="Enviar" class="form__button rounded-pill" data-backdrop="false" data-dismiss="#envioContactHome" data-toggle="modal" data-target="#envioContactHome" >
+					  Enviar
 					</button>
-					<div class="modal fade" id="envioContacto" tabindex="-1"  aria-hidden="true">
+					<div class="modal fade" id="envioContactHome" tabindex="-1"  aria-hidden="true">
 					  <div class="modal-dialog">
 					    <div class="modal-content">						
 					      <div class="modal-body msj-respuesta">
 					        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					        <button type="button" class="btn-gral" data-dismiss="modal">Cerrar</button>
 					      </div>
 					    </div>
 					  </div>
