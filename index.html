@@ -121,23 +121,21 @@
 			    	</div>
 			 	 </div>
 			 	 <div class="buttons">
-				 	<button type="button" id="Enviar" class="form__button rounded-pill"   data-toggle="modal" data-target="#envioContacto" >
+				 	<button type="button" id="Enviar"  class="form__button rounded-pill" data-dismiss="#envioContacto" data-toggle="modal" data-target="#envioContacto" >
 							  Enviar
-							</button>
-
-							<!-- Modal boton enviar de seccion contacto-->
-							<div class="modal fade" id="envioContacto" tabindex="-1"  aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">						
-							      <div class="modal-body msj-respuesta">
-							        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-							      </div>
-							    </div>
-							  </div>
-							</div>
+					</button>
+					<div class="modal fade" id="envioContacto" tabindex="-1"  aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">						
+					      <div class="modal-body msj-respuesta">
+					        Muchas gracias por contactarse! Su consulta será resuelta a la brevedad :)
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 					<input class="form__button rounded-pill" type="reset" id="Borrar" name="reset" value="Borrar ">	
 				</div>	  	
 			</form>
