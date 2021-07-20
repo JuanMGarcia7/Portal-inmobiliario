@@ -229,7 +229,9 @@ header {
 	}
 
 }
-
+.contacInicio{	
+		min-height: 540px;
+	}
 .contactForm {
 	width: 60%;
 	margin: auto;
@@ -238,7 +240,8 @@ header {
 	box-shadow: -4px 4px 6px 0px rgba(0,0,0,0.75);
 	background-image:url(../media/fondo.JPEG);
 	margin-bottom: 3%;
-	min-height: 540px;
+
+	
 
 
 
@@ -282,6 +285,7 @@ header {
 		.buttons{
 			display: flex;
 			justify-content: center;
+			padding-top:2%;
 			.form__button {
 				width: 12%;
 				font-weight: $fuente-regular;

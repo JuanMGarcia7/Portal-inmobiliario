@@ -159,6 +159,9 @@ header {
 .destacados #imagen2 {
   margin-top: 1%; }
 
+.contacInicio {
+  min-height: 540px; }
+
 .contactForm {
   width: 60%;
   margin: auto;
@@ -166,8 +169,7 @@ header {
   border: 1px solid black;
   box-shadow: -4px 4px 6px 0px rgba(0, 0, 0, 0.75);
   background-image: url(../media/fondo.JPEG);
-  margin-bottom: 3%;
-  min-height: 540px; }
+  margin-bottom: 3%; }
   @media all and (max-width: 992px) {
     .contactForm {
       width: 80%; } }
@@ -192,7 +194,8 @@ header {
     border: 1px solid #4F4F4F; }
   .contactForm .buttons {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 2%; }
     .contactForm .buttons .form__button {
       width: 12%;
       font-weight: 400;
